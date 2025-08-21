@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.2.10'
     id 'application'
@@ -29,10 +31,14 @@ dependencies {
 }
 
 kotlin {
-    sourceSets.all {
-        languageSettings {
-            languageVersion = "2.0"
-        }
+//    sourceSets.configureEach {
+//        languageSettings {
+//            languageVersion = "2.0"
+//        }
+//    }
+
+    compilerOptions {
+        jvmTarget = JvmTarget.JVM_21
     }
 }
 
@@ -45,17 +51,9 @@ compileJava {
     targetCompatibility JavaVersion.VERSION_21.toString()
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = '21'
-}
-
-compileTestKotlin {
-    kotlinOptions.jvmTarget = '21'
-}
-
-application {
-    mainClassName = 'MainKt'
-}
+//application {
+//    mainClassName = 'MainKt'
+//}
 
 //kotlin {
 //    jvm {

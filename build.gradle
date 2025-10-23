@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.2.20'
+    id 'org.jetbrains.kotlin.jvm' version '2.2.21'
     id 'application'
     id 'java'
 //    id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.21'

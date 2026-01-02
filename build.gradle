@@ -38,7 +38,7 @@ kotlin {
 //    }
 
     compilerOptions {
-        jvmTarget = JvmTarget.JVM_21
+        jvmTarget = JvmTarget.JVM_25
     }
 }
 
@@ -47,8 +47,8 @@ test {
 }
 
 compileJava {
-    sourceCompatibility JavaVersion.VERSION_21.toString()
-    targetCompatibility JavaVersion.VERSION_21.toString()
+    sourceCompatibility JavaVersion.VERSION_25.toString()
+    targetCompatibility JavaVersion.VERSION_25.toString()
 }
 
 //application {

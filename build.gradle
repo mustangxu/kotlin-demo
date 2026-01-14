@@ -27,7 +27,7 @@ dependencies {
 //    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0"
 //    implementation(kotlin("stdlib-js"))
 //    testImplementation(kotlin("test-js"))
-    implementation "org.http4k:http4k-core:6.25.1.0"
+    implementation "org.http4k:http4k-core:6.26.0.0"
 }
 
 kotlin {
